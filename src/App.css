@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+.maindiv {
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chips-container {
+  height: 5px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  border-radius: 9px;
+}
+
+.my-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background-color: gray;
+  color: #fff;
+  border-radius: 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.chip-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background-color: #f0f0f0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove-icon {
+  margin-left: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: red;
+  border-radius: 50%;
+}
+
+input {
+  font-size: 16px;
+  margin: 4px;
+  width: 150px;
+  border: #f0f0f0;
+}
+
+.autocomplete-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.autocomplete-list li {
+  width: 150px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.autocomplete-list li:hover {
+  background-color: #f0f0f0;
 }
